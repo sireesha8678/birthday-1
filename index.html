@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Love ❤️</title>
+
+<style>
+
+/* =====================================================
+   BASIC SETTINGS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   ALL PAGES
+===================================================== */
+
+.page {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.page.active {
+    display: flex;
+
+    animation: pageAppear 0.8s ease;
+}
+
+@keyframes pageAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.hearts {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.heart {
+    position: absolute;
+    bottom: -60px;
+
+    color: #e9a8a8;
+    opacity: 0;
+
+    animation:
+        floatingHeart
+        linear
+        infinite;
+}
+
+.heart:nth-child(1) {
+    left: 4%;
+    font-size: 18px;
+    animation-duration: 8s;
+}
+
+.heart:nth-child(2) {
+    left: 12%;
+    font-size: 25px;
+    animation-duration: 11s;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+    left: 23%;
+    font-size: 16px;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(4) {
+    left: 34%;
+    font-size: 22px;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+
+.heart:nth-child(5) {
+    left: 47%;
+    font-size: 17px;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(6) {
+    left: 59%;
+    font-size: 27px;
+    animation-duration: 12s;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(7) {
+    left: 71%;
+    font-size: 18px;
+    animation-duration: 9s;
+    animation-delay: 3s;
+}
+
+.heart:nth-child(8) {
+    left: 83%;
+    font-size: 24px;
+    animation-duration: 11s;
+}
+
+.heart:nth-child(9) {
+    left: 93%;
+    font-size: 16px;
+    animation-duration: 7s;
+    animation-delay: 4s;
+}
+
+.heart:nth-child(10) {
+    left: 40%;
+    font-size: 14px;
+    animation-duration: 9s;
+    animation-delay: 5s;
+}
+
+@keyframes floatingHeart {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    100% {
+        transform:
+            translateY(-115vh)
+            rotate(25deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   PAGE 1
+===================================================== */
+
+#page1 {
+    background: white;
+}
+
+.page1-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 90%;
+
+    max-width: 700px;
+}
+
+.page1-content h1 {
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(40px, 8vw, 75px);
+
+    line-height: 1.15;
+
+    color: #111;
+
+    margin-bottom: 45px;
+
+    font-weight: bold;
+}
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    min-height: 90px;
+}
+
+.btn {
+
+    border: none;
+
+    border-radius: 50px;
+
+    padding:
+        15px 38px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-family:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease;
+}
+
+.yes-btn {
+
+    background: #111;
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,0.15);
+}
+
+.no-btn {
+
+    background: #eeeeee;
+
+    color: #333;
+}
+
+
+/* =====================================================
+   PAGE 2
+===================================================== */
+
+#page2 {
+    background: #f8eedf;
+}
+
+.page2-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 90%;
+
+    max-width: 650px;
+}
+
+
+/* =====================================================
+   TEDDY
+===================================================== */
+
+.teddy-area {
+
+    position: relative;
+
+    width: 330px;
+
+    height: 420px;
+
+    margin:
+        0 auto 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.teddy-image {
+
+    width: 310px;
+
+    max-width: 95%;
+
+    height: auto;
+
+    max-height: 360px;
+
+    object-fit: contain;
+
+    cursor: pointer;
+
+    filter:
+        drop-shadow(
+            0 10px 12px
+            rgba(0,0,0,0.12)
+        );
+
+    animation:
+        teddyFloat
+        2.8s
+        ease-in-out
+        infinite;
+
+    transition:
+        transform 0.35s ease;
+}
+
+.teddy-image:hover {
+
+    transform:
+        scale(1.05);
+}
+
+@keyframes teddyFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-9px);
+    }
+}
+
+
+/* =====================================================
+   TAP TEXT
+===================================================== */
+
+.tap-text {
+
+    position: absolute;
+
+    bottom: 5px;
+
+    left: 0;
+
+    width: 100%;
+
+    color: #555;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    animation:
+        tapPulse
+        1.5s
+        infinite;
+}
+
+@keyframes tapPulse {
+
+    0%,
+    100% {
+        opacity: 0.45;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* =====================================================
+   BIRTHDAY POPUP
+===================================================== */
+
+.birthday-message {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0,0,0,0.18);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 100;
+
+    padding: 20px;
+}
+
+.birthday-message.show {
+
+    display: flex;
+
+    animation:
+        fadeIn
+        0.5s ease;
+}
+
+.birthday-card {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding:
+        40px 25px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,0.2);
+
+    animation:
+        birthdayPop
+        0.7s
+        cubic-bezier(
+            .17,
+            .67,
+            .32,
+            1.5
+        );
+}
+
+.birthday-card h2 {
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(32px, 8vw, 50px);
+
+    line-height: 1.2;
+
+    color: #111;
+
+    margin-bottom: 20px;
+}
+
+.birthday-card p {
+
+    font-size: 18px;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+.heart-big {
+
+    display: inline-block;
+
+    animation:
+        heartBeat
+        1s
+        infinite;
+}
+
+@keyframes heartBeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes birthdayPop {
+
+    0% {
+        transform:
+            scale(0.3)
+            rotate(-5deg);
+
+        opacity: 0;
+    }
+
+    70% {
+        transform:
+            scale(1.08)
+            rotate(2deg);
+    }
+
+    100% {
+        transform:
+            scale(1)
+            rotate(0);
+
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+.confetti {
+
+    position: fixed;
+
+    width: 10px;
+
+    height: 16px;
+
+    top: -30px;
+
+    z-index: 150;
+
+    pointer-events: none;
+
+    animation:
+        confettiFall
+        3s
+        linear
+        forwards;
+}
+
+@keyframes confettiFall {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   MORE MESSAGE
+===================================================== */
+
+.more-text {
+
+    display: none;
+
+    position: relative;
+
+    z-index: 10;
+
+    margin-top: 10px;
+}
+
+.more-text.show {
+
+    display: block;
+
+    animation:
+        pageAppear
+        0.8s ease;
+}
+
+.more-text h3 {
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(25px, 6vw, 38px);
+
+    color: #222;
+
+    margin-bottom: 10px;
+}
+
+.more-text p {
+
+    color: #555;
+
+    font-size: 17px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   COMMON NEXT BUTTON
+===================================================== */
+
+.next-btn {
+
+    background: #111;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 50px;
+
+    padding:
+        14px 38px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.next-btn:hover {
+
+    transform:
+        scale(1.08);
+}
+
+
+/* =====================================================
+   PAGE 3
+   DO YOU LOVE ME?
+===================================================== */
+
+#page3 {
+
+    background: #fff7f5;
+}
+
+.love-question {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 90%;
+
+    max-width: 700px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =====================================================
+   PUPPY IMAGE
+===================================================== */
+
+.puppy-image {
+
+    width: 190px;
+
+    max-width: 65vw;
+
+    height: auto;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+
+    filter:
+        drop-shadow(
+            0 8px 12px
+            rgba(0,0,0,0.12)
+        );
+
+    animation:
+        puppyFloat
+        2.5s
+        ease-in-out
+        infinite;
+
+    transition:
+        transform 0.35s ease;
+}
+
+.puppy-image:hover {
+
+    transform:
+        scale(1.05);
+}
+
+@keyframes puppyFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-8px);
+    }
+}
+
+
+/* =====================================================
+   LOVE QUESTION
+===================================================== */
+
+.love-question h1 {
+
+    font-family: Georgia, serif;
+
+    color: #111;
+
+    font-size:
+        clamp(42px, 9vw, 75px);
+
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+}
+
+.love-question .subtext {
+
+    font-size: 18px;
+
+    color: #777;
+
+    margin-bottom: 40px;
+}
+
+
+/* =====================================================
+   LOVE BUTTONS
+===================================================== */
+
+.love-buttons {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 100px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.love-yes {
+
+    background: #111;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 50px;
+
+    padding:
+        16px 45px;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,0.15);
+
+    transition:
+        transform 0.4s ease;
+}
+
+.love-no {
+
+    background: #eeeeee;
+
+    color: #333;
+
+    border: none;
+
+    border-radius: 50px;
+
+    padding:
+        16px 40px;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        all 0.4s ease;
+}
+
+
+/* =====================================================
+   LOVE SUCCESS POPUP
+===================================================== */
+
+.love-success {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(255,247,245,0.96);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 200;
+
+    padding: 20px;
+}
+
+.love-success.show {
+
+    display: flex;
+
+    animation:
+        fadeIn
+        0.5s ease;
+}
+
+.success-card {
+
+    width: 100%;
+
+    max-width: 520px;
+
+    background: white;
+
+    padding:
+        45px 25px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 70px
+        rgba(0,0,0,0.15);
+
+    animation:
+        birthdayPop
+        0.7s ease;
+}
+
+.success-card .success-heart {
+
+    font-size: 70px;
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    animation:
+        heartBeat
+        1s
+        infinite;
+}
+
+.success-card h2 {
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(34px, 8vw, 55px);
+
+    color: #111;
+
+    margin-bottom: 15px;
+}
+
+.success-card p {
+
+    color: #666;
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   PAGE 4
+   LOVE LETTER
+===================================================== */
+
+#page4 {
+
+    background: white;
+
+    align-items:
+        flex-start;
+
+    overflow-y: auto;
+}
+
+.letter-wrapper {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 90%;
+
+    max-width: 720px;
+
+    margin:
+        50px auto;
+
+    padding-bottom: 60px;
+}
+
+.letter-card {
+
+    background:
+        #fffaf0;
+
+    border:
+        1px solid
+        #eadfce;
+
+    border-radius: 22px;
+
+    padding:
+        38px 30px;
+
+    text-align: left;
+
+    box-shadow:
+        0 12px 40px
+        rgba(0,0,0,0.08);
+
+    animation:
+        letterAppear
+        1s ease;
+}
+
+@keyframes letterAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+.letter-title {
+
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    font-size:
+        clamp(32px, 8vw, 50px);
+
+    color: #222;
+
+    margin-bottom: 30px;
+}
+
+.letter-card p {
+
+    font-family: Georgia, serif;
+
+    color: #333;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+.signature {
+
+    text-align: right;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    color: #222;
+
+    margin-top: 30px;
+}
+
+.final-heart {
+
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-top: 20px;
+
+    animation:
+        heartBeat
+        1.2s
+        infinite;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .page1-content h1 {
+
+        font-size: 42px;
+
+        margin-bottom: 35px;
+    }
+
+    .buttons {
+
+        gap: 14px;
+    }
+
+    .btn {
+
+        padding:
+            13px 27px;
+
+        font-size: 16px;
+    }
+
+    .teddy-area {
+
+        width: 300px;
+
+        height: 390px;
+    }
+
+    .teddy-image {
+
+        width: 285px;
+
+        max-height: 340px;
+    }
+
+    /* PUPPY ON MOBILE */
+
+    .puppy-image {
+
+        width: 150px;
+
+        margin-bottom: 18px;
+    }
+
+    .love-question h1 {
+
+        font-size: 45px;
+    }
+
+    .love-question .subtext {
+
+        font-size: 16px;
+    }
+
+    .love-buttons {
+
+        gap: 12px;
+    }
+
+    .love-yes,
+    .love-no {
+
+        padding:
+            14px 28px;
+
+        font-size: 16px;
+    }
+
+    .letter-wrapper {
+
+        margin-top: 30px;
+    }
+
+    .letter-card {
+
+        padding:
+            28px 21px;
+    }
+
+    .letter-card p {
+
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     PAGE 1
+===================================================== -->
+
+<section
+    id="page1"
+    class="page active"
+>
+
+    <div class="hearts">
+
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+
+    </div>
+
+
+    <div class="page1-content">
+
+        <h1>
+            Are you ready<br>
+            for this, my dear?
+        </h1>
+
+
+        <div class="buttons">
+
+            <button
+                id="yesBtn"
+                class="btn yes-btn"
+            >
+                YES ❤️
+            </button>
+
+
+            <button
+                id="noBtn"
+                class="btn no-btn"
+            >
+                NO
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 2
+===================================================== -->
+
+<section
+    id="page2"
+    class="page"
+>
+
+    <div class="hearts">
+
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+
+    </div>
+
+
+    <div class="page2-content">
+
+        <div class="teddy-area">
+
+            <img
+                src="teddy-gift.png"
+                alt="Cute brown teddy bear holding a gift"
+                class="teddy-image"
+                id="teddyGift"
+            >
+
+
+            <div class="tap-text">
+                ✨ Tap the gift ✨
+            </div>
+
+        </div>
+
+
+        <div
+            id="moreText"
+            class="more-text"
+        >
+
+            <h3>
+                There is more to this hope you will like it... 💕
+            </h3>
+
+            <p>
+                but first let me ask a question first.
+            </p>
+
+            <button
+                id="nextBtn"
+                class="next-btn"
+            >
+                NEXT →
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- BIRTHDAY POPUP -->
+
+    <div
+        id="birthdayMessage"
+        class="birthday-message"
+    >
+
+        <div class="birthday-card">
+
+            <h2>
+
+                Happy Birthday<br>
+
+                my love
+                <span class="heart-big">
+                    ❤️
+                </span>
+                !!!
+
+            </h2>
+
+
+            <p>
+                🎉✨ Today is all about you! ✨🎉
+            </p>
+
+
+            <button
+                id="closeBirthday"
+                class="next-btn"
+            >
+                Continue 💕
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 3
+     DO YOU LOVE ME?
+===================================================== -->
+
+<section
+    id="page3"
+    class="page"
+>
+
+    <div class="hearts">
+
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+
+    </div>
+
+
+    <div class="love-question">
+
+
+        <!-- PUPPY IMAGE -->
+
+        <img
+            src="puppy.png"
+            alt="Cute puppy"
+            class="puppy-image"
+        >
+
+
+        <h1>
+            Do you love me?
+        </h1>
+
+
+        <p class="subtext">
+            Be honest... 👀💕
+        </p>
+
+
+        <div class="love-buttons">
+
+            <button
+                id="loveYes"
+                class="love-yes"
+            >
+                YES ❤️
+            </button>
+
+
+            <button
+                id="loveNo"
+                class="love-no"
+            >
+                NO 😭
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- LOVE SUCCESS -->
+
+    <div
+        id="loveSuccess"
+        class="love-success"
+    >
+
+        <div class="success-card">
+
+            <span class="success-heart">
+                ❤️
+            </span>
+
+
+            <h2>
+                I KNEW IT! 🥹
+            </h2>
+
+
+            <p>
+                I love you too, my love.
+                <br>
+                More than you know babe. ❤️
+            </p>
+
+
+            <button
+                id="loveContinue"
+                class="next-btn"
+            >
+                Here comes the main thing... 💌
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 4
+     LOVE LETTER
+===================================================== -->
+
+<section
+    id="page4"
+    class="page"
+>
+
+    <div class="hearts">
+
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+        <span class="heart">♡</span>
+
+    </div>
+
+
+
+    <div class="letter-wrapper">
+
+        <div class="letter-card">
+
+            <h1 class="letter-title">
+                To My Man ❤️
+            </h1>
+
+
+            <p>
+                My love,
+            </p>
+
+
+            <p>
+
+                Happy Birthday to the person who makes
+                my ordinary days feel a little more special.
+                I don't know if words will ever be enough
+                to explain how much you mean to me, but
+                I want you to know that having you in my
+                life is something I will always be grateful for.
+
+            </p>
+
+
+            <p>
+
+                You have become such a beautiful part of
+                my life. Your smile, your little habits,
+                the conversations we have, and even the
+                silly moments we share are memories that
+                I will always keep close to my heart.
+
+            </p>
+
+
+            <p>
+
+                On your birthday, I just want to wish you
+                happiness, success, peace, and everything
+                your heart wishes for. I hope this new year
+                of your life brings you countless reasons
+                to smile.
+
+            </p>
+
+
+            <p>
+
+                And no matter how many birthdays come and go,
+                I hope I get to keep making beautiful memories
+                with you.
+
+            </p>
+
+
+            <p>
+
+                Thank you for being you.
+                And thank you for being a part of my story.
+
+            </p>
+
+
+            <div class="signature">
+
+                With all my love,<br>
+
+                Your girl ❤️
+
+            </div>
+
+
+            <div class="final-heart">
+                ♡
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   PAGE SWITCH
+===================================================== */
+
+function showPage(number) {
+
+    document
+        .querySelectorAll(".page")
+        .forEach(function(page) {
+
+            page.classList.remove("active");
+
+        });
+
+
+    document
+        .getElementById("page" + number)
+        .classList.add("active");
+}
+
+
+
+/* =====================================================
+   PAGE 1
+===================================================== */
+
+const yesBtn =
+    document.getElementById("yesBtn");
+
+const noBtn =
+    document.getElementById("noBtn");
+
+let noClicks = 0;
+
+
+noBtn.addEventListener(
+    "click",
+    function() {
+
+        noClicks++;
+
+
+        let noScale =
+            Math.max(
+                0.35,
+                1 - noClicks * 0.12
+            );
+
+
+        let yesScale =
+            Math.min(
+                1.9,
+                1 + noClicks * 0.16
+            );
+
+
+        noBtn.style.transform =
+            "scale(" +
+            noScale +
+            ")";
+
+
+        yesBtn.style.transform =
+            "scale(" +
+            yesScale +
+            ")";
+
+
+        if (noClicks === 2) {
+
+            noBtn.innerText =
+                "Are you sure?";
+
+        }
+
+
+        if (noClicks === 4) {
+
+            noBtn.innerText =
+                "Really? 🥺";
+
+        }
+
+
+        if (noClicks === 6) {
+
+            noBtn.innerText =
+                "NO 😭";
+
+        }
+
+    }
+);
+
+
+yesBtn.addEventListener(
+    "click",
+    function() {
+
+        showPage(2);
+
+    }
+);
+
+
+
+/* =====================================================
+   PAGE 2
+===================================================== */
+
+const teddyGift =
+    document.getElementById("teddyGift");
+
+const birthdayMessage =
+    document.getElementById(
+        "birthdayMessage"
+    );
+
+const moreText =
+    document.getElementById(
+        "moreText"
+    );
+
+let giftOpened = false;
+
+
+teddyGift.addEventListener(
+    "click",
+    function() {
+
+        if (giftOpened) {
+            return;
+        }
+
+        giftOpened = true;
+
+
+        teddyGift.style.transform =
+            "scale(0.85)";
+
+
+        createConfetti();
+
+
+        setTimeout(
+            function() {
+
+                birthdayMessage
+                    .classList
+                    .add("show");
+
+            },
+            450
+        );
+
+    }
+);
+
+
+
+/* =====================================================
+   CLOSE BIRTHDAY POPUP
+===================================================== */
+
+document
+    .getElementById("closeBirthday")
+    .addEventListener(
+        "click",
+        function() {
+
+            birthdayMessage
+                .classList
+                .remove("show");
+
+
+            setTimeout(
+                function() {
+
+                    moreText
+                        .classList
+                        .add("show");
+
+                },
+                300
+            );
+
+        }
+    );
+
+
+
+/* =====================================================
+   PAGE 2 → PAGE 3
+===================================================== */
+
+document
+    .getElementById("nextBtn")
+    .addEventListener(
+        "click",
+        function() {
+
+            showPage(3);
+
+        }
+    );
+
+
+
+/* =====================================================
+   PAGE 3
+   DO YOU LOVE ME?
+===================================================== */
+
+const loveYes =
+    document.getElementById("loveYes");
+
+const loveNo =
+    document.getElementById("loveNo");
+
+const loveSuccess =
+    document.getElementById("loveSuccess");
+
+let loveNoClicks = 0;
+
+
+loveNo.addEventListener(
+    "click",
+    function() {
+
+        loveNoClicks++;
+
+
+        /* YES becomes bigger */
+
+        let yesSize =
+            Math.min(
+                2.2,
+                1 + loveNoClicks * 0.18
+            );
+
+
+        /* NO becomes smaller */
+
+        let noSize =
+            Math.max(
+                0.25,
+                1 - loveNoClicks * 0.15
+            );
+
+
+        loveYes.style.transform =
+            "scale(" +
+            yesSize +
+            ")";
+
+
+        loveNo.style.transform =
+            "scale(" +
+            noSize +
+            ")";
+
+
+        /* Change NO text */
+
+        if (loveNoClicks === 1) {
+
+            loveNo.innerText =
+                "Are you sure? 🥺";
+
+        }
+
+
+        if (loveNoClicks === 2) {
+
+            loveNo.innerText =
+                "Think again 😭";
+
+        }
+
+
+        if (loveNoClicks === 3) {
+
+            loveNo.innerText =
+                "Please? 🥹";
+
+        }
+
+
+        if (loveNoClicks === 4) {
+
+            loveNo.innerText =
+                "NOOO 😭";
+
+        }
+
+
+        if (loveNoClicks >= 5) {
+
+            loveNo.innerText =
+                "You can't say no 😂";
+
+        }
+
+    }
+);
+
+
+
+/* =====================================================
+   YES → LOVE SUCCESS
+===================================================== */
+
+loveYes.addEventListener(
+    "click",
+    function() {
+
+        createConfetti();
+
+
+        loveSuccess
+            .classList
+            .add("show");
+
+    }
+);
+
+
+
+/* =====================================================
+   PAGE 3 → PAGE 4
+===================================================== */
+
+document
+    .getElementById("loveContinue")
+    .addEventListener(
+        "click",
+        function() {
+
+            loveSuccess
+                .classList
+                .remove("show");
+
+
+            showPage(4);
+
+        }
+    );
+
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+function createConfetti() {
+
+    const symbols = [
+        "♥",
+        "♡",
+        "✦",
+        "•",
+        "★"
+    ];
+
+
+    for (
+        let i = 0;
+        i < 80;
+        i++
+    ) {
+
+        const confetti =
+            document.createElement(
+                "div"
+            );
+
+
+        confetti.classList.add(
+            "confetti"
+        );
+
+
+        confetti.innerHTML =
+            symbols[
+                Math.floor(
+                    Math.random()
+                    *
+                    symbols.length
+                )
+            ];
+
+
+        confetti.style.left =
+            Math.random() *
+            100 +
+            "vw";
+
+
+        confetti.style.fontSize =
+            (
+                10 +
+                Math.random() *
+                15
+            ) +
+            "px";
+
+
+        confetti.style.animationDuration =
+            (
+                2 +
+                Math.random() *
+                2
+            ) +
+            "s";
+
+
+        confetti.style.animationDelay =
+            Math.random() *
+            0.8 +
+            "s";
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(
+            function() {
+
+                confetti.remove();
+
+            },
+            4500
+        );
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
